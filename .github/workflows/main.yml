@@ -36,7 +36,7 @@ jobs:
           pr_title: "Test PR"
 
   prod:
-    runs-on: windows-latest
+    runs-on: linux-latest
     needs: create-pull-request
     environment:
       name: 'Production'
@@ -45,7 +45,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
-          name: java-app
+          name: python-app
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp-dev
