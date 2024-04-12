@@ -25,3 +25,6 @@ def stack():
 def test_push_to_stack_with_fixture(stack):
     push_to_stack(stack, "item")
     assert stack == ["item"], "L'item n'a pas été ajouté au stack avec fixture"
+
+    # Test Pull request
+    # Test mise en prod
