@@ -19,7 +19,7 @@ jobs:
           pip install pytest
       - name: Run tests
         run: |
-          pytest tests/# Les tests échoueront ici si pytest retourne un code d'état différent de zéro.
+          pytest
       
   create-pull-request:
     runs-on: ubuntu-latest
